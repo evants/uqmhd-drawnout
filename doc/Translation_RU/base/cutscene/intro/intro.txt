@@ -1,0 +1,533 @@
+#(=========== This is the PC intro script =========================)
+
+#( !!!WARNING!!! Do not mess with the timing of this script starting )
+#( from SYNC in Slide 1. The music is synchronized to the slides. If )
+#( you MUST change timing of a subtitle, make sure this change is    )
+#( balanced off by another subtitle within the same slide!           )
+
+#(Clear entire screen first; set size...)
+DIMS 320 240
+
+#(... and clear)
+CLS
+
+#(Set sequence dimensions; param1=width; param2=height)
+DIMS 320 200
+#(Everything is drawn within the clipping rect defined by DIMS, from 0, 0)
+
+#(Fade all to black; param1=fade time)
+FTB 0
+
+#(Set text fore color; 0xRRGGBB)
+TC FFFFFF
+#(Set text back color; 0xRRGGBB)
+TBC 000000
+#(Set text effect; Traced, None, others when added)
+TE TRACED
+
+#(Load font to use later)
+FONT 0 base/fonts/starcon.fon
+#(Load font to use later)
+FONT 1 base/fonts/slides.fon
+
+#(************ Title Screen ******************************************)
+
+#(+++++++++++ Title 1 +++++++++++++++++++++++++++++++++)
+
+#(Set font to use)
+FONT 0
+
+#(Set ANIM to draw slides from)
+ANI base/cutscene/intro/title.ani
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC 000000
+
+#(Set text vertical position; can be T=top, B=bottom, M=middle)
+TVA B
+
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Fade-in a slide; param1=fade time)
+FTC 1500
+#(Wait)
+WAIT 2000
+#(Fade slide to black; param1=fade time)
+FTB 2000
+#(Wait)
+WAIT 500
+
+#(++++++++++++ Title 2 +++++++++++++++++++++++++++++++++++)
+
+#(Play music)
+MUSIC base/cutscene/intro/introx.mod
+
+#(Move sync point to current time index)
+RESYNC
+
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Fade-in a slide; param1=fade time)
+FTC 3000
+#(Synchronize)
+SYNC 5000
+#(Text fade-in)
+TFI Основано на исходных кодах STAR CONTROL II
+(зарегистрированная торговая марка Atari)
+#(Synchronize)
+SYNC 8000
+#(Text fade-out)
+TFO
+#(Wait)
+WAIT 200
+#(Text fade-in)
+TFI Авторы оригинала
+Фред Форд и Пол Ричи III
+1992 г.
+#(Synchronize)
+SYNC 12000
+#(Text fade-out)
+TFO
+#(Wait)
+WAIT 200
+#(Text fade-in)
+TFI Выпущено в мир ПО с открытым кодом
+в 2002 г.
+
+#(Synchronize)
+SYNC 16000
+
+#(Fade slide to black; param1=fade time)
+FTB 3000
+
+#(************* Slides *********************************************)
+
+#(Set font to use)
+FONT 1
+
+#(Set ANIM to draw slides from)
+ANI base/cutscene/intro/intro.ani
+
+#(Set text vertical position; can be T=top, B=bottom, M=middle)
+TVA T
+
+#(++++++++++++++++++++ Slide 1 ++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC 1018BC
+
+#(!!! Milestone Sync 1 !!!)
+SYNC 20000
+
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Fade-in a slide; param1=fade time)
+FTC 700
+#(Text fade-in)
+TFI Прошло много великих битв...
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Земли и её партнёров
+из Союза Свободных Звёзд...
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI С жестокими Ур-Кванами
+и их Иерархией Воинов-Невольников.
+#(!!! Milestone Sync 2 !!!)
+SYNC 35000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI ...и Ур-Кваны побеждали...
+#(Wait)
+WAIT 2000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI В это время на границе
+известной Вселенной было сделано
+удивительное открытие...
+#(!!! Milestone Sync 3 !!!)
+SYNC 41000
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI глубоко под поверхностью
+неизвестного, чужого мира...
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(+++++++++++++++++++++ Slide 2 ++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC 707070
+
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Fade-in a slide; param1=fade time)
+FTC 700
+
+#(Text fade-in)
+TFI Огромный подземный город...
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Полный технологических чудес
+далеко шагнувшей космической расы,
+называемой Предтечами...
+#(Wait)
+WAIT 6000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Которая исчезла тысячи
+веков тому назад.
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Но затем основной флот Ур-Кванов
+прорвал линию обороны Союза
+Свободных Звёзд...
+#(Wait)
+WAIT 6500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Изолировав планету, оставив
+учёных в сотнях световых лет
+от Земли.
+#(Wait)
+WAIT 6500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Они с надеждой ждали
+прибытия спасательного корабля...
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI который так и не прилетел.
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(+++++++++++++++++++++++ Slide 3 +++++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC FCA030
+
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Fade-in a slide; param1=fade time)
+FTC 700
+
+#(Text fade-in)
+TFI 20 лет прошло...
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Мы, выжившие участники
+научной экспедиции,
+колонизировали этот мир.
+#(Wait)
+WAIT 4500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Мы продолжили изучение
+подземного города...
+#(Wait)
+WAIT 4500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI И мы выяснили
+его предназначение...
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Это завод.
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(+++++++++++++++++++++++ Slide 4 +++++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC FC480C
+
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Fade-in a slide; param1=fade time)
+FTC 700
+
+#(Text fade-in)
+TFI Завод по производству
+звездолетов!
+#(Wait)
+WAIT 4500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Но у нас недостаточно материалов
+для постройки целого корабля.
+#(Wait)
+WAIT 5000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Мы смогли изготовить лишь
+скелет звездолета.
+#(Wait)
+WAIT 5000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Но этого достаточно --
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Потому что ТЫ будешь капитаном
+звездолета...
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI И возглавишь экспедицию на Землю!
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(+++++++++++++++++++++++ Slide 5 +++++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC 000000
+
+#(Draw slide; param1=ANI index)
+DRAW 4
+#(Fade-in a slide; param1=fade time)
+FTC 700
+
+#(Text fade-in)
+TFI Чтобы преодолевать огромные
+расстояния, придётся пройти через
+Гиперпространство...
+#(Wait)
+WAIT 6000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 4
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Выясните, что случилось
+за прошедшие годы...
+#(Wait)
+WAIT 5000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 4
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Расскажите Земле о нас!
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 4
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI И, если война с Ур-Кванами
+всё ещё продолжается...
+#(Wait)
+WAIT 5000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 4
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Сражайтесь за Землю и Союз
+до победного конца...
+#(Wait)
+WAIT 6000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 4
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(***************************** The End ********************************)

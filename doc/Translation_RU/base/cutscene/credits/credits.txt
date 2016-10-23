@@ -1,0 +1,407 @@
+#(======== This is the Credit Roll script ================)
+#(===                                                  ===)
+#( Each text line has the following format:               )
+#(   font-size SP alignment SP text                       )
+#( SP        : any whitespace character                   )
+#( LF        : linefeed character; UTF8 code 0x0A         )
+#( TAB       : horizontal tab character; UTF8 code 0x09   )
+#( *N        : denotes zero or more instances             )
+#( font-size : in points; integer; anything you think     )
+#(             is useful                                  )
+#( alignment : column-def ["," column-def]*N              )
+#(   column-def  : align-char ["/" align-point]           )
+#(   align-char  : is one of L(eft), C(enter), R(ight)    )
+#(   align-point : a point relative to which the aligment )
+#(                 is applied to a given column; if not   )
+#(                 specified, the default point is used   )
+#( text      : ( chars [TAB chars]*N LF )*N               )
+#( Example:                                               )
+#(   13 L,C/130,R/250 Chunk1<tab>Chunk2<tab>Chunk3        )
+#( "Chunk1" will be left-justified at the default point;  )
+#( "Chunk2" will be centered around point 130;            )
+#( "Chunk3" will be right-justified at point 250.         )
+#(===                                                  ===)
+
+
+#(Port caption)
+13 C
+Группа Ур-Кванских Хозяев
+...................................................
+ 
+
+#(Core team caption)
+13 C
+ОСНОВНАЯ КОМАНДА
+(в алфавитном порядке)
+
+#(Core team members)
+13 C
+Serge van den Boom
+Mika Kolehmainen
+Michael Chapman Martin
+Chris Nelson
+Alex Volkov
+ 
+#(AP caption)
+13 C
+ДОПОЛНИТЕЛЬНОЕ ПРОГРАММИРОВАНИЕ
+(в алфавитном порядке)
+
+#(AP crew)
+13 C
+Geoffrey Hausheer
+Nicolas Simonds
+ 
+#(Music remixers caption)
+13 C
+НОВАЯ МУЗЫКА
+(в алфавитном порядке)
+
+#(Music remixers)
+13 C
+Jouni Airaksinen
+Tore Aune Fjellstad
+Espen Gätzschmann
+Aaron J. Grier
+Dan Nicholson
+George Nowik
+Riku Nuottajärvi
+Erol Otus
+ 
+#(Other contrib caption)
+13 C
+ДРУГИЕ СОТРУДНИКИ
+(в алфавитном порядке)
+
+#(Other contrib crew)
+13 C
+Jouni Airaksinen
+(начальное меню)
+ 
+Karl Bartel
+ 
+Travis Chase
+(перенос на BeOS)
+ 
+Felix Lazarev
+(помощь от 3DO)
+ 
+Parker MacMillan
+ 
+Sanjay Madhav
+(исправление кода)
+ 
+Robert McNamara
+(поддержка MacOS X)
+ 
+Mike Melanson
+(ADPCM из MPlayer,
+  для DUK audio)
+ 
+Mudrony Laszlo
+(распаковка данных для PC/DOS)
+ 
+Erol Otus
+(картинка заставки)
+ 
+Brian Rogers
+ 
+Horatiu Romosan
+(установщик под Win32 v0.1)
+ 
+Zarla Sheenaza
+(графика в установщике под Win32 v0.6)
+ 
+Joffrey Smith
+(настройки графики)
+ 
+Peter van Valderen
+ 
+Alex Volkov
+(дополнительные слайды)
+ 
+Alexander Waseleski
+(исправление кода)
+ 
+Yukki
+(графика в установщике под Win32 v 0.1)
+ 
+#(Original Game caption)
+13 C
+Авторы оригинальной игры
+...................................................
+ 
+
+#(P&T caption)
+13 C
+ПРОГРАММИРОВАНИЕ
+
+#(P&T crew)
+17 C
+FRED FORD
+ 
+#(D&F caption)
+13 C
+ДИЗАЙН ИГРЫ И ИГРОВОГО МИРА
+
+#(D&F crew)
+17 C
+PAUL REICHE III 
+ 
+#(3DO Prog caption)
+13 C
+ПРОГРАММИСТЫ 3DO 
+
+#(3DO Prog crew)
+17 C
+KEN FORD
+FRED FORD
+BRAD VAN TIGHEM
+ 
+#(3DO Producer caption)
+13 C
+ПРОДЮСЕР (ВЕРСИЯ 3DO)
+
+#(3DO Producer)
+17 C
+MARK WALLACE
+ 
+#(3DO Production caption)
+13 C
+ПРОИЗВОДСТВО 3Do
+
+#(3DO Production crew)
+17 C
+PAUL REICHE III
+RICHARD ANTAKI
+ 
+#(PC Producer caption)
+13 C
+ПРОДЮСЕР (Версия PC/DOS)
+
+#(PC Producer)
+17 C
+PAM LEVINS
+ 
+#(Voice actors caption)
+13 C
+РОЛИ ОЗВУЧИВАЛИ:
+
+#(Voice actors, batch 1)
+13 R/146,L/165
+Richard Antaki	Траддаш
+Alex Bennett	База
+	Командир
+Rich Betz	Арилу Ла'лилэй
+	Друуджи
+Roy Blumenfeld	Зок-Фот-Пик
+David Bryce	Кор'А
+	Ильврат
+	Шофиксти
+	Спасси
+Lauren Forcella	Супокс
+Greg Johnson	Орз
+	Пканк
+	Утвиг
+
+#(Voice actors, batch 2)
+13 R/146,L/165
+Bruce Leyland	Йехат
+Erol Otus	Чммр
+Paul Reiche III	Майкон
+	Говорящая зверушка
+Brad Van Tighem	Слайлендро
+Madeleine Wild	Зок-Фот-Пик
+	Сиренна
+	ВУКС
+Larry Zee	Умга
+	Мелноме
+	Ур-Кван
+840-AV	Зонд Слайлендро
+Paul II, Paul III	Заключение
+Arianna
+& Devin Reiche
+ 
+#(V.Eff caption)
+13 C
+ЗВУКОВЫЕ ЭФФЕКТЫ 
+
+#(V.Eff crew)
+17 C
+JEFF FOREHAN
+BURKE TREISCHMANN
+MARK MILLER 
+ 
+#(V.Edit caption)
+13 C
+ЗВУКООБРАБОТКА
+
+#(V.Edit crew)
+13 C
+Richard Antaki
+Paul Reiche III
+Burke Treischmann
+Steve Henefin
+Jeremy Bredow
+Erik Griss
+Brad Van Tighem 
+ 
+#(A&A caption)
+13 C
+ГРАФИКА И АНИМАЦИЯ 
+
+#(A&A crew)
+13 C
+George Barr
+Paul Reiche III
+Erol Otus
+Greg Johnson
+Kyle Balda
+Jeff Rianda
+Taunya Shiffer
+Leonard Robel
+Greg Hammond
+Armand Cabrera
+Silicon Knights 
+ 
+#(Writers caption)
+13 C
+ДОПОЛНЕНИЯ
+
+#(Writing crew)
+13 C
+Greg Johnson
+Mat Genser
+Robert Leyland
+Iain McCaig
+Tomi Quintana
+Erol Otus
+Leonard Robel
+John Estes 
+ 
+#(Composers caption)
+13 C
+МУЗЫКА
+
+#(Composers)
+13 C
+Burke Treischmann
+Dan Nicholson
+Riku Nuottajärvi
+Eric Berge
+Erol Otus
+Marc Brown
+Aaron Grier
+Kevin Palivec
+Tommy Dunbar 
+ 
+#(3D.gfx caption)
+13 C
+3D АНИМАЦИЯ
+
+#(3D.gfx crew)
+13 C
+Gene Bodio
+Phil Le Marbre
+ 
+#(DUCK codec)
+13 C
+TrueMotion(R) "S" Video Compression
+by The Duck Corporation 
+ 
+#(Marketing caption)
+13 C
+ДИРЕКТОР ПРОЕКТА
+(3DO Version)
+
+#(Marketing crew)
+13 C
+Jim Curry 
+ 
+#(3DO testers caption)
+13 C
+ТЕСТИРОВЩИКИ 3DO
+
+#(3DO tester crew)
+13 C
+Susan Michele
+Jeremy Bredow
+Wes Gittens
+Ty Johnson
+Tate Schieferle
+Carolina Esmurdoc
+Rob Johnson
+Kevin Kwan
+Joe Ganis
+Chang Fadel
+Erik Griss
+Eugene Law
+Mark Ybarra
+Steve Groll
+Tim Jordan
+Matt Young 
+ 
+#(PC testers caption)
+13 C
+ТЕСТИРОВЩИКИ PC/DOS
+
+#(PC tester crew)
+13 C
+Pam Levins
+Tomi Quintana
+Joel Dinolt
+Robert Daly
+Greg Hammond
+B.J. Shea
+Robert Leyland
+Sean Vikoren
+Mike Ebert
+Tony Hsieh
+ROL
+Ed Gwynn
+Akila Redmer
+Russell Bornschlegel
+Steve Graziano
+Mark Voorsanger 
+ 
+#(Special caption)
+13 C
+ОСОБАЯ БЛАГОДАРНОСТЬ
+
+#(Special crew)
+13 C
+Greg Johnson
+John Ratcliffe
+ 
+#(Paul's family)
+13 C
+СЕМЬЯ PAUL'А
+
+#(Paul's family)
+13 C
+Laurie
+Devin
+and Arianna
+ 
+
+#(C/D boss)
+13 C
+ИЗ-ЗА НЕЁ НАС НАВСЕГДА ВЫГНАЛИ
+ИЗ РЕСТОРАНА В ЛАС-ВЕГАСЕ
+ 
+Madeline Canepa
+ 
+(МЫ ВСЁ РАВНО ЕЁ ЛЮБИМ)
+ 
+#(padding)
+13 C
+...................................................
+ 
+ 
+ 
+ 
+ 
+#(The End)
+45 C
+КОНЕЦ
+ 

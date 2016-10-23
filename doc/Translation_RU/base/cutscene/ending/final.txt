@@ -1,0 +1,627 @@
+#(========== This is the PC ending slides script =====================)
+
+#( !!!WARNING!!! Do not mess with the timing of this script starting )
+#( from MUSIC opcode. The music is synchronized to the slides.       )
+#( If you MUST change timing of a subtitle, make sure this change is )
+#( balanced off by another subtitle within the same slide!           )
+
+#(Set sequence dimensions; param1=width; param2=height)
+DIMS 320 200
+#(Everything is drawn within the clipping rect defined by DIMS, from 0, 0)
+
+#(Fade all to black; param1=fade time)
+FTB 0
+
+#(Set text fore color; 0xRRGGBB)
+TC FFFFFF
+#(Set text back color; 0xRRGGBB)
+TBC 000000
+#(Set text effect; Traced, None, others when added)
+TE TRACED
+
+#(Play music)
+MUSIC base/cutscene/ending/victoryf.mod
+
+#(************* Slides *********************************************)
+
+#(Set font to use)
+FONT 0 base/fonts/slides.fon
+
+#(Set ANIM to draw slides from)
+ANI base/cutscene/ending/ending.ani
+
+#(Set text vertical position; can be T=top, B=bottom, M=middle)
+TVA T
+
+#(++++++++++++++++++++ Slide 1 ++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC 0C1C78
+
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Fade-in a slide; param1=fade time)
+FTC 3000
+
+#(Text fade-in)
+TFI Когда я очнулся, надо мной
+склонился ангел.
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Я знал, что я умер.
+#(Wait)
+WAIT 2000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI И я подумал, что
+если я действительно умер,
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI то я умер
+единственно верным способом.
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI И тут я услышал голос Таланы...
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI ...она просила меня
+перестать бормотать
+и послушать её.
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Она сказала, что
+спасательную капсулу
+почти разорвало пополам.
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI И я пролежал без сознания
+более трёх недель,
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI но я и моя команда
+успешно выполнили задание!
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Сила взрыва, многократно
+усиленная кристаллами Чммр,
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI оказалась достаточной для
+превращения Са-Матры в пар!
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI А после разрушения
+боевой платформы Са-Матра...
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI ...флоты Ур-Кванов и Кор'А
+потеряли свой боевой дух,
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI и были рассеяны обьединёнными
+силами Чммр и союзников.
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Тут Талана попросила меня сесть.
+#(Wait)
+WAIT 2000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Она сказала, что мне надо
+кое-что увидеть...
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 0
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(+++++++++++++++++++++ Slide 2 ++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC 707070
+
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Fade-in a slide; param1=fade time)
+FTC 700
+
+#(Text fade-in)
+TFI Я с трудом привстал
+и осмотрелся...
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI ...Я был в лазарете
+Орбитальной Станции,
+и передо мной была Земля.
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Подо мной пульсировало
+и переливалось красное покрывало
+рабского щита Ур-Кванов.
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Талана улыбнулась и сказала,
+что в последние дни...
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Чммр работали над
+нейтрализацией щита,
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI и что заключительные работы
+проводятся прямо... Вот!
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 1
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTW 700
+
+#(+++++++++++++++++++++++ Slide 3 +++++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC 707070
+
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Fade-in a slide; param1=fade time)
+FTC 1200
+
+#(Text fade-in)
+TFI Полыхнуло ослепительно белым,
+и Рабский Щит пропал...
+#(Wait)
+WAIT 4500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI ...и впервые в своей жизни
+я увидел истинные цвета Земли...
+#(Wait)
+WAIT 4500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI ...тысячи оттенков
+синего и зелёного.
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Пока мы смотрели,
+с её стороны
+появились корабли.
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Они поднимались с поверхности,
+чтобы присоединиться к нам.
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Часы человеческой истории
+остановились на более чем
+двадцать лет,
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI но теперь наш мир снова свободен,
+и ничто нас не остановит!
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Я оставался в лазарете
+ещё почти месяц,
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI но этот день...
+#(Wait)
+WAIT 2000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI ...день, когда я увидел, как пал щит,
+и прекрасная Талана стояла рядом,
+держа меня за руку...
+#(Wait)
+WAIT 4500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Я никогда не забуду этот день.
+Никогда в своей жизни...
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 2
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(+++++++++++++++++++++++ Slide 4 +++++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC FC6000
+
+#(Clear screen)
+CLS
+#(Restore color)
+FTC 0
+#(Wait a little)
+WAIT 1000
+
+#(Text fade-in)
+TFI Дедушка, а что же
+было дальше?
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Clear screen)
+CLS
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Да! Как ты вернулся домой?
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Clear screen)
+CLS
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI И как вы с бабушкой поженились?
+#(Wait)
+WAIT 3500
+#(Text fade-out)
+TFO
+#(Clear screen)
+CLS
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(+++++++++++++++++++++++ Slide 5 +++++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC FC6000
+
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Fade-in a slide; param1=fade time)
+FTC 700
+
+#(Text fade-in)
+TFI Ну, мы собирались тут же
+отправиться домой,
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI но перед этим нам пришлось
+решить другую проблему.
+#(Wait)
+WAIT 2500
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Лишь почти пять лет спустя
+мы с Таланой вернулись домой,
+сюда, на Унзервальт.
+#(Wait)
+WAIT 5000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI Но дедушка! Что случилось?
+Куда вы отправились?
+#(Wait)
+WAIT 4000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+#(Wait)
+WAIT 500
+
+#(Text fade-in)
+TFI И как вы нашли корабль Марк II?
+#(Wait)
+WAIT 3000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 3
+
+#(Wait)
+WAIT 700
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(+++++++++++++++++++++++ Slide 6 +++++++++++++++++++++++++++)
+
+#(Set text fade in/out color; 0xRRGGBB)
+TFC 707070
+
+#(Draw slide; param1=ANI index)
+DRAW 4
+#(Fade-in a slide; param1=fade time)
+FTC 700
+
+#(Text fade-in)
+TFI А это, внучки, совершенно
+другая история.
+#(Wait)
+WAIT 7000
+#(Text fade-out)
+TFO
+#(Draw slide; param1=ANI index)
+DRAW 4
+
+#(Wait)
+WAIT 800
+
+#(Fade slide to black; param1=fade time)
+FTB 700
+
+#(***************************** The End ********************************)
